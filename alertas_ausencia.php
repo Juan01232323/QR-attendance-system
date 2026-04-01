@@ -1,26 +1,24 @@
 <?php
-
 require "config/database.php";
 require "vendor/autoload.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$fecha=date("Y-m-d");
+$fecha = date("Y-m-d");
 
-$sql="SELECT nombre FROM empleados
-WHERE id NOT IN(
-SELECT empleado_id FROM asistencias WHERE fecha=:fecha
-)";
+$sql = "SELECT nombre FROM empleados WHERE id NOT IN (SELECT empleado_id FROM asistencias WHERE fecha = :fecha)";
+$stmt = $conexion->prepare($sql);
+$stmt->execute(['fecha' => $fecha]);
+$faltantes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmt=$conexion->prepare($sql);
-$stmt->execute(['fecha'=>$fecha]);
+if (!$faltantes) {
+    die("No hay faltas registradas hoy. El sistema no enviará correo porque todos asistieron.");
+}
 
-$faltantes=$stmt->fetchAll(PDO::FETCH_ASSOC);
+$mail = new PHPMailer(true); 
 
-if(!$faltantes) exit;
-
-$mail=new PHPMailer();
-
+try {
 $mail->isSMTP();
 $mail->Host='smtp.gmail.com';
 $mail->SMTPAuth=true;
@@ -29,18 +27,28 @@ $mail->Password='password';
 $mail->SMTPSecure='tls';
 $mail->Port=587;
 
-$mail->setFrom('sistema@empresa.com');
+$mail->setFrom('sistema@empresa.com', 'Sistema QR');
 $mail->addAddress('rh@empresa.com');
+    
+    $mail->isHTML(false); 
+    $mail->Subject = "Reporte de Faltas - " . $fecha;
 
-$mail->Subject="Empleados sin asistencia";
+    $mensaje = "Los siguientes empleados no registraron asistencia hoy:\n\n";
+    foreach($faltantes as $f){
+        $mensaje .= "- " . $f['nombre'] . "\n";
+    }
 
-$mensaje="No registraron asistencia:\n";
+    $mail->Body = $mensaje;
 
-foreach($faltantes as $f){
+    if($mail->send()){
+        echo "¡Correo enviado con éxito!";
+    }
 
-$mensaje.=$f['nombre']."\n";
-
+} catch (Exception $e) {
+    echo "Error al enviar el correo: {$mail->ErrorInfo}";
 }
+
+
 
 $mail->Body=$mensaje;
 
