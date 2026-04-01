@@ -8,12 +8,13 @@ El sistema registra automáticamente la entrada y salida de los empleados y gene
 
 Incluye funcionalidades como:
 
-- Escaneo de códigos QR para registro de asistencia
-- Panel de administración para recursos humanos
-- Detección automática de retardos
-- Notificaciones en tiempo real
-- Dashboard analítico con métricas de asistencia
-- Arquitectura multiempresa
+-Escaneo de códigos QR para registro de asistencia
+-Panel de administración para recursos humanos
+-Detección automática de retardos
+-Notificaciones en tiempo real
+-Dashboard analítico con métricas de asistencia
+-Sistema automático de alertas de ausencia
+-Arquitectura multiempresa
 
 ---
 
@@ -21,11 +22,11 @@ Incluye funcionalidades como:
 
 Construir un sistema backend funcional que permita:
 
-- Registro automatizado de asistencias
-- Gestión centralizada de empleados
-- Generación de métricas y reportes
-- Seguridad mediante autenticación
-- Escalabilidad para múltiples empresas
+-Registro automatizado de asistencias
+-Gestión centralizada de empleados
+-Generación de métricas y reportes
+-Seguridad mediante autenticación
+-Escalabilidad para múltiples empresas
 
 ---
 
@@ -39,6 +40,7 @@ Construir un sistema backend funcional que permita:
 | Framework UI         | Bootstrap                |
 | Gráficas             | Chart.js                 |
 | Escaneo QR           | HTML5 QR Scanner         |
+| Envío de correos     | PHPMailer
 | Autenticación        | JWT                      |
 | Control de versiones | Git / GitHub             |
 
@@ -48,10 +50,10 @@ Construir un sistema backend funcional que permita:
 
 ### 👥 Gestión de Empleados
 
-- Registro de empleados
-- Generación de código QR único por empleado
-- Administración de información de empleados
-- Asignación de horarios de entrada
+-Registro de empleados
+-Generación de código QR único por empleado
+-Administración de información de empleados
+-Asignación de horarios de entrada
 
 ---
 
@@ -107,6 +109,34 @@ También incluye gráficas generadas con **Chart.js** para visualizar:
 - Actividad reciente
 
 ---
+
+### 📧 Sistema Automático de Alertas de Ausencia
+
+El sistema incluye un módulo que detecta automáticamente empleados que no registraron asistencia en el día.
+
+Al finalizar la jornada laboral:
+
+El sistema consulta la base de datos
+Identifica empleados sin registro de asistencia
+Genera un reporte automático
+Envía un correo al departamento de Recursos Humanos
+
+Este proceso utiliza PHPMailer para enviar el reporte mediante SMTP.
+
+Ejemplo de correo generado:
+
+Reporte de Faltas - 2026-03-29
+
+Los siguientes empleados no registraron asistencia hoy:
+
+- Juan Pérez
+- María López
+- Carlos Sánchez
+
+Esto permite que Recursos Humanos detecte ausencias sin revisar manualmente el sistema.
+
+---
+
 
 ## 🔌 Módulos Principales del Sistema
 
@@ -299,8 +329,7 @@ Juan Carlos Reynoso Zúñiga
 <img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/6f68616c-a430-4c12-a5b5-f541f08216f2" />
 <img width="1912" height="943" alt="image" src="https://github.com/user-attachments/assets/961f5904-a6d6-4f89-bc95-376b7c9bf831" />
 <img width="1919" height="947" alt="image" src="https://github.com/user-attachments/assets/5dcc4734-f41c-42e2-b49b-001da2b810e6" />
-<img width="689" height="344" alt="image" src="https://github.com/user-attachments/assets/a3674d61-7310-447b-a76a-8f610c75ccfd" />
-<img width="881" height="507" alt="image" src="https://github.com/user-attachments/assets/11108c83-6a85-4019-b9a8-3f5068e3b078" />
+<img width="809" height="238" alt="image" src="https://github.com/user-attachments/assets/29cdb0ce-95d5-4a7a-ab43-761242a53851" />
 
 
 <img width="1630" height="179" alt="image" src="https://github.com/user-attachments/assets/51893a9e-63f4-4234-8408-665eb5d28794" />
@@ -310,7 +339,6 @@ Juan Carlos Reynoso Zúñiga
 
 <img width="1912" height="945" alt="image" src="https://github.com/user-attachments/assets/da840105-fefe-492e-b91e-433f5db170a5" />
 
-<img width="1914" height="944" alt="image" src="https://github.com/user-attachments/assets/34c721e7-dd2d-45a2-8210-782a8eae5222" />
 <img width="1913" height="952" alt="image" src="https://github.com/user-attachments/assets/3e341e94-af68-4074-8924-b26f14c282f8" />
 
 
