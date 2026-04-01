@@ -288,6 +288,10 @@ Este proyecto demuestra habilidades en:
 Juan Carlos Reynoso Zúñiga
 ```
 
+```bash
+Back-End Developer
+```
+
 
 <img width="1915" height="948" alt="image" src="https://github.com/user-attachments/assets/5e481423-1ec9-4fd9-8e85-c3faf0ee4095" />
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/91c728fb-3d3d-435d-b1a7-4f16ea6b5682" />
@@ -302,10 +306,3 @@ Juan Carlos Reynoso Zúñiga
 <img width="1913" height="952" alt="image" src="https://github.com/user-attachments/assets/3e341e94-af68-4074-8924-b26f14c282f8" />
 
 
-
-
-
-
-```bash
-Back-End Developer
-```
