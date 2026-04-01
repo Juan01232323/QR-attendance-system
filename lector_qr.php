@@ -39,14 +39,12 @@ document.getElementById("mensaje").innerHTML="";
 });
 
 }
-// 1. Crear la instancia del escáner
 let html5QrcodeScanner = new Html5QrcodeScanner(
     "reader", // Debe coincidir con el id del div <div id="reader">
-    { fps: 10, qrbox: {width: 250, height: 250} },
-    /* verbose= */ false
+    { fps: 3, qrbox: {width: 250, height: 250} },
+    false
 );
 
-// 2. Iniciar el escaneo vinculando la función onScanSuccess que ya tienes
 html5QrcodeScanner.render(onScanSuccess);
 
 </script>
