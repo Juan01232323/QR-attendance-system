@@ -47,9 +47,3 @@ $mail->addAddress('rh@empresa.com');
 } catch (Exception $e) {
     echo "Error al enviar el correo: {$mail->ErrorInfo}";
 }
-
-
-
-$mail->Body=$mensaje;
-
-$mail->send();
