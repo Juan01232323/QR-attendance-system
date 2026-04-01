@@ -332,7 +332,7 @@ Juan Carlos Reynoso Zúñiga
 <img width="809" height="238" alt="image" src="https://github.com/user-attachments/assets/29cdb0ce-95d5-4a7a-ab43-761242a53851" />
 
 
-<img width="1630" height="179" alt="image" src="https://github.com/user-attachments/assets/51893a9e-63f4-4234-8408-665eb5d28794" />
+<img width="1848" height="266" alt="image" src="https://github.com/user-attachments/assets/1eca2f06-81a5-49d0-bc8e-8529b22146aa" />
 
 <img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/67e267ba-a27c-4593-a31a-ffb33144debb" />
 <img width="1908" height="945" alt="image" src="https://github.com/user-attachments/assets/5cfa7e82-5984-46b8-bddf-c91af2913e8d" />
