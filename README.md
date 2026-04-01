@@ -295,9 +295,21 @@ Juan Carlos Reynoso Zúñiga
 <img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/4a7a1ce3-7d96-43af-ac46-0c8d90052891" />
 <img width="1919" height="947" alt="image" src="https://github.com/user-attachments/assets/3496328f-518e-4286-b74d-e96a083cac93" />
 <img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/7735c6e7-fe66-4c28-b05e-045399760976" />
+<img width="1915" height="954" alt="image" src="https://github.com/user-attachments/assets/257ca694-6bb0-4b59-b1cf-99653f1ab47e" />
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/6f68616c-a430-4c12-a5b5-f541f08216f2" />
+<img width="1912" height="943" alt="image" src="https://github.com/user-attachments/assets/961f5904-a6d6-4f89-bc95-376b7c9bf831" />
+<img width="1919" height="947" alt="image" src="https://github.com/user-attachments/assets/5dcc4734-f41c-42e2-b49b-001da2b810e6" />
+<img width="689" height="344" alt="image" src="https://github.com/user-attachments/assets/a3674d61-7310-447b-a76a-8f610c75ccfd" />
+<img width="881" height="507" alt="image" src="https://github.com/user-attachments/assets/11108c83-6a85-4019-b9a8-3f5068e3b078" />
+
+
 <img width="1630" height="179" alt="image" src="https://github.com/user-attachments/assets/51893a9e-63f4-4234-8408-665eb5d28794" />
+
 <img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/67e267ba-a27c-4593-a31a-ffb33144debb" />
+<img width="1908" height="945" alt="image" src="https://github.com/user-attachments/assets/5cfa7e82-5984-46b8-bddf-c91af2913e8d" />
+
 <img width="1912" height="945" alt="image" src="https://github.com/user-attachments/assets/da840105-fefe-492e-b91e-433f5db170a5" />
+
 <img width="1914" height="944" alt="image" src="https://github.com/user-attachments/assets/34c721e7-dd2d-45a2-8210-782a8eae5222" />
 <img width="1913" height="952" alt="image" src="https://github.com/user-attachments/assets/3e341e94-af68-4074-8924-b26f14c282f8" />
 
