@@ -253,7 +253,7 @@ git clone https://github.com/tu-repositorio
 Importar el archivo:
 
 ```bash
-database.sql
+consultas_asistencias.sql
 ```
 
 en MySQL.
